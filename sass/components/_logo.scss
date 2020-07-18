@@ -1,0 +1,31 @@
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: var(--font-logo);
+  color: var(--accent-text-color);
+  line-height: 1.19;
+}
+
+.header__logo--tail {
+  color: var(--main-text-color);
+  transition: color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+
+  &--tail {
+    color: var(--dark-theme-text-color);
+    transition: color var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
+}

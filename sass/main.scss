@@ -1,0 +1,14 @@
+@import "./utils/variables";
+@import "./utils/baseStyle";
+@import "./utils/placeholder";
+
+body {
+  @extend %page-style;
+  font-family: $font-body;
+  color: $main-text-color;
+  background-color: $main-background-color;
+}
+
+@import "./components/container";
+@import "./components/pageHeader";
+@import "./components/logo";
