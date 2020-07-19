@@ -9,7 +9,7 @@
   font-weight: 500;
 
   border: 1px solid #e5e5e5;
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
 
   &__container {
     display: flex;
@@ -40,32 +40,32 @@
   }
 
   &__contacts-link {
-    color: var(--paragraph-text-color);
+    color: $paragraph-text-color;
 
     display: flex;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    transition: color var(--timing-function);
+    @include mixinTransition(color);
 
     &:hover,
     &:focus {
-      color: var(--accent-text-color);
+      color: $accent-text-color;
     }
   }
 
   &__contacts-icon {
     margin-right: 10px;
 
-    fill: #afb1b8;
-    stroke: #afb1b8;
+    fill: $border-color;
+    stroke: $border-color;
     stroke-width: 1px;
-    transition: fill var(--timing-function), stroke var(--timing-function);
+    @include mixinTransition(fill);
 
     .page-header__contacts-link:hover &,
     .page-header__contacts-link:focus & {
-      fill: var(--accent-text-color);
-      stroke: var(--accent-text-color);
+      fill: $accent-text-color;
+      stroke: $accent-text-color;
       stroke-width: 2px;
     }
   }
@@ -74,15 +74,15 @@
 .nav__link {
   position: relative;
 
-  color: var(--main-text-color);
+  color: $main-text-color;
 
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color var(--timing-function);
+  @include mixinTransition(color);
 
   .page-header__nav &--current {
-    color: var(--accent-text-color);
+    color: $accent-text-color;
   }
 
   &--current::after {
@@ -94,8 +94,8 @@
     display: block;
     width: 100%;
     height: 4px;
-    border-color: var(--accent-text-color);
+    border-color: $accent-text-color;
     border-radius: 2px 2px;
-    background-color: var(--accent-text-color);
+    background-color: $accent-text-color;
   }
 }

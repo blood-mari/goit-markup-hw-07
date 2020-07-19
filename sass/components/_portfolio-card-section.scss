@@ -1,0 +1,16 @@
+.portfolio-work {
+  &__list {
+    margin-bottom: 34px;
+    padding-bottom: 16px;
+    @include centerFlex($type: flex, $position: flex-start);
+
+    & li + li {
+      margin-left: 8px;
+    }
+  }
+}
+
+.portfolio-button {
+  margin: 0;
+  padding: 6px 22px;
+}

@@ -1061,6 +1061,9 @@ address__item:not(:last-child) {
 }
 
 .submit-button {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
   width: 200px;
   padding: 10px 55px;
 
