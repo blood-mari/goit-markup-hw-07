@@ -51,6 +51,8 @@
     margin-right: 30px;
     width: calc((100% - 60px) / 3);
 
+    transition: box-shadow $duration $timing-function;
+
     &-thumb {
       position: relative;
       overflow: hidden;
