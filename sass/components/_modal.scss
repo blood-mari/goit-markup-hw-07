@@ -9,7 +9,8 @@
   margin-left: auto;
   background-color: $overlay-modal-color;
   opacity: 1;
-  @include mixinTransition(transform, opacity);
+  transition: transform $duration $timing-function,
+    opacity $duration $timing-function;
 
   &.is-hidden {
     opacity: 0;
@@ -26,7 +27,7 @@
   left: 53%;
 
   transform: translate(-55%, -51%) scale(1);
-  @include mixinTransition(transform);
+  transition: transform $duration $timing-function;
 
   color: $paragraph-text-color;
 }
@@ -85,7 +86,8 @@
     left: 42px;
 
     transform: translateY(-50%);
-    @include mixinTransition(transform, font-size);
+    transition: transform $duration $timing-function,
+      font-size $duration $timing-function, color $duration $timing-function;
 
     line-height: 1.33;
     letter-spacing: 0.01em;
@@ -134,7 +136,7 @@
 
   .form-input:focus + & {
     transform: translate(-26px, -40px);
-    color: var(--accent-text-color);
+    color: $accent-text-color;
     font-size: 12px;
   }
 
@@ -156,7 +158,8 @@
     left: 16px;
 
     transform: translateY(-50%);
-    @include mixinTransition(transform, font-size);
+    transition: transform $duration $timing-function,
+      font-size $duration $timing-function, color $duration $timing-function;
   }
 }
 
@@ -167,7 +170,7 @@
 
   fill: $main-text-color;
   transform: translateY(-50%);
-  @include mixinTransition(fill);
+  transition: fill $duration $timing-function;
 
   .form-input:focus ~ &,
   .form-input:not(:placeholder-shown) ~ & {
@@ -241,7 +244,8 @@
     @include bordered;
 
     transform: scale(1, 1);
-    @include mixinTransition(transform, background-color);
+    transition: transform $duration $timing-function,
+      background-color $duration $timing-function;
 
     &:hover,
     &:focus {

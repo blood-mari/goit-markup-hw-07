@@ -8,7 +8,7 @@
 
 .header__logo--tail {
   color: $main-text-color;
-  @include mixinTransition(color);
+  transition: color $duration $timing-function;
 
   &:hover,
   &:focus {
@@ -21,7 +21,7 @@
 
   &--tail {
     color: $dark-theme-text-color;
-    @include mixinTransition(color);
+    transition: color $duration $timing-function;
 
     &:hover,
     &:focus {

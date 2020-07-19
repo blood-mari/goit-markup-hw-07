@@ -46,7 +46,7 @@
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    @include mixinTransition(color);
+    transition: color $duration $timing-function;
 
     &:hover,
     &:focus {
@@ -60,7 +60,7 @@
     fill: $border-color;
     stroke: $border-color;
     stroke-width: 1px;
-    @include mixinTransition(fill);
+    transition: fill $duration $timing-function;
 
     .page-header__contacts-link:hover &,
     .page-header__contacts-link:focus & {
@@ -79,7 +79,7 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  @include mixinTransition(color);
+  transition: color $duration $timing-function;
 
   .page-header__nav &--current {
     color: $accent-text-color;

@@ -31,6 +31,10 @@ textarea {
   font-family: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 .link:focus,
 .link:hover {
   color: #2196f3;
@@ -142,8 +146,8 @@ body {
           align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header__contacts-link:hover, .page-header__contacts-link:focus {
@@ -155,8 +159,8 @@ body {
   fill: #afb1b8;
   stroke: #afb1b8;
   stroke-width: 1px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header__contacts-link:hover .page-header__contacts-icon,
@@ -172,8 +176,8 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header__nav .nav__link--current {
@@ -203,8 +207,8 @@ body {
 
 .header__logo--tail {
   color: #212121;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__logo--tail:hover, .header__logo--tail:focus {
@@ -217,8 +221,8 @@ body {
 
 .footer__logo--tail {
   color: #ffffff;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__logo--tail:hover, .footer__logo--tail:focus {
@@ -275,10 +279,10 @@ body {
   margin-top: 30px;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: transform, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: transform, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button--primary:hover,
@@ -299,10 +303,10 @@ body {
   margin-left: auto;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: transform, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: transform, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -320,10 +324,10 @@ body {
   left: 53%;
   -webkit-transform: translate(-55%, -51%) scale(1);
           transform: translate(-55%, -51%) scale(1);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #757575;
 }
 
@@ -388,10 +392,10 @@ body {
   left: 42px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: transform, font-size 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: transform, font-size 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
+  -webkit-transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.33;
   letter-spacing: 0.01em;
 }
@@ -438,7 +442,7 @@ body {
 .form-input:focus + .form-label {
   -webkit-transform: translate(-26px, -40px);
           transform: translate(-26px, -40px);
-  color: var(--accent-text-color);
+  color: #2196f3;
   font-size: 12px;
 }
 
@@ -462,10 +466,10 @@ body {
   left: 16px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: transform, font-size 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: transform, font-size 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
+  -webkit-transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-label {
@@ -475,8 +479,8 @@ body {
   fill: #212121;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus ~ .icon-label,
@@ -553,10 +557,10 @@ body {
   border: 1px solid transparent;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: transform, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: transform, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-button:hover, .submit-button:focus {
@@ -638,8 +642,8 @@ body {
   left: 0;
   width: 100%;
   opacity: 0.3;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -769,8 +773,8 @@ body {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link--background:hover, .social-link--background:focus {
@@ -781,8 +785,8 @@ body {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__icon-social {
@@ -817,10 +821,10 @@ body {
           align-items: center;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  -webkit-transition: border-width, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: border-width, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: transform, border-width, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: transform, border-width, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
+  -webkit-transition: border-width 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-width 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), border-width 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), border-width 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__link:hover, .clients__linkfocus {
@@ -832,8 +836,8 @@ body {
 
 .clients__logo {
   fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__link:hover .clients__logo,
@@ -906,8 +910,8 @@ footer a {
 .footer__mail,
 .footer__tel {
   color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__mail:hover, .footer__mail:focus,
@@ -986,10 +990,10 @@ footer a {
   min-width: 200px;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
-  transition: transform, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-  transition: transform, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms, -webkit-transform;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe__button:hover, .subscribe__button:focus {

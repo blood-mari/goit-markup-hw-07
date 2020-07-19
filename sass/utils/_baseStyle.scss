@@ -31,6 +31,10 @@ textarea {
   font-family: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 .link:focus,
 .link:hover {
   color: $accent-text-color;
