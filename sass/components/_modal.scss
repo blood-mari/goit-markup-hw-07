@@ -9,8 +9,7 @@
   margin-left: auto;
   background-color: $overlay-modal-color;
   opacity: 1;
-  transition: transform $duration $timing-function,
-    opacity $duration $timing-function;
+  @include mixinTransition();
 
   &.is-hidden {
     opacity: 0;
@@ -27,7 +26,7 @@
   left: 53%;
 
   transform: translate(-55%, -51%) scale(1);
-  transition: transform $duration $timing-function;
+  @include mixinTransition(transform);
 
   color: $paragraph-text-color;
 }
@@ -86,8 +85,7 @@
     left: 42px;
 
     transform: translateY(-50%);
-    transition: transform $duration $timing-function,
-      font-size $duration $timing-function, color $duration $timing-function;
+    @include mixinTransition();
 
     line-height: 1.33;
     letter-spacing: 0.01em;
@@ -158,8 +156,7 @@
     left: 16px;
 
     transform: translateY(-50%);
-    transition: transform $duration $timing-function,
-      font-size $duration $timing-function, color $duration $timing-function;
+    @include mixinTransition();
   }
 }
 
@@ -170,7 +167,7 @@
 
   fill: $main-text-color;
   transform: translateY(-50%);
-  transition: fill $duration $timing-function;
+  @include mixinTransition();
 
   .form-input:focus ~ &,
   .form-input:not(:placeholder-shown) ~ & {
@@ -244,8 +241,7 @@
     @include bordered;
 
     transform: scale(1, 1);
-    transition: transform $duration $timing-function,
-      background-color $duration $timing-function;
+    @include mixinTransition();
 
     &:hover,
     &:focus {

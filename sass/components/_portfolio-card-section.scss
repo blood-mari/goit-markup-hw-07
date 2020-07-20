@@ -2,12 +2,16 @@
   &__list {
     margin-bottom: 34px;
     padding-bottom: 16px;
-    @include centerFlex($type: flex, $position: flex-start);
+    @include centerFlex(flex, flex-start);
 
     & li + li {
       margin-left: 8px;
     }
   }
+}
+
+.visually-hidden {
+  @extend %visually--hidden;
 }
 
 .portfolio-button {
@@ -16,8 +20,7 @@
   margin: 0;
   padding: 6px 22px;
 
-  transition: color $duration $timing-function,
-    background-color $duration $timing-function;
+  @include mixinTransition();
 
   &:hover,
   &:focus {
@@ -51,7 +54,7 @@
     margin-right: 30px;
     width: calc((100% - 60px) / 3);
 
-    transition: box-shadow $duration $timing-function;
+    @include mixinTransition();
 
     &-thumb {
       position: relative;
@@ -87,7 +90,7 @@
   left: 0;
 
   transform: translateY(101%);
-  transition: transform $duration $timing-function;
+  @include mixinTransition();
 
   background-color: rgba(33, 150, 243, 0.9);
   width: 100%;

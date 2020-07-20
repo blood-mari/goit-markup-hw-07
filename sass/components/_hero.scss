@@ -57,8 +57,7 @@
   margin-top: 30px;
 
   transform: scale(1, 1);
-  transition: transform $duration $timing-function,
-    background-color $duration $timing-function;
+  @include mixinTransition(transform, background-color);
 }
 
 .hero__button--primary:hover,

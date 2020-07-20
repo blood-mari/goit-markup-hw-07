@@ -27,7 +27,7 @@ footer {
 .footer__mail,
 .footer__tel {
   color: $footer-contacts-color;
-  transition: color $duration $timing-function;
+  @include mixinTransition();
 
   &:hover,
   &:focus {
@@ -98,8 +98,7 @@ footer {
   min-width: 200px;
 
   transform: scale(1, 1);
-  transition: transform $duration $timing-function,
-    background-color $duration $timing-function;
+  @include mixinTransition();
 
   &:hover,
   &:focus {

@@ -22,7 +22,7 @@
     width: 100%;
 
     opacity: 0.3;
-    transition: opacity $duration $timing-function;
+    @include mixinTransition();
 
     font-size: 14px;
     font-weight: 700;

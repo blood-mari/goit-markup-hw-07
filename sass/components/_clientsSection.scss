@@ -17,9 +17,7 @@
     @include centerFlex;
 
     transform: scale(1, 1);
-    transition: transform $duration $timing-function,
-      border-width $duration $timing-function,
-      border-color $duration $timing-function;
+    @include mixinTransition();
 
     &:hover,
     &focus {
@@ -31,7 +29,7 @@
 
   &__logo {
     fill: $border-color;
-    transition: fill $duration $timing-function;
+    @include mixinTransition();
 
     .clients__link:hover &,
     .clients__link:focus & {

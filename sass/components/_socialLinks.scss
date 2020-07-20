@@ -4,7 +4,7 @@
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  transition: background-color $duration $timing-function;
+  @include mixinTransition();
 
   &--background {
     &:hover,
@@ -18,7 +18,7 @@
   width: 20px;
   height: 20px;
   fill: $border-color;
-  transition: fill $duration $timing-function;
+  @include mixinTransition();
 }
 
 .footer__icon-social {
