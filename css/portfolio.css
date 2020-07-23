@@ -412,22 +412,20 @@ body {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 1ms;
 }
 
-.clients__link:hover, .clients__linkfocus {
+.clients__link:hover,
+.clients__link:hover .clients__link__logo, .clients__link:focus,
+.clients__link:focus .clients__link__logo {
   border-color: #2196f3;
   border-width: 2px;
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
+  fill: #2196f3;
 }
 
 .clients__logo {
   fill: #afb1b8;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 1ms;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 1ms;
-}
-
-.clients__link:hover .clients__logo,
-.clients__link:focus .clients__logo {
-  fill: #2196f3;
 }
 
 .clients__icon-1 {
