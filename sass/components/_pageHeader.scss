@@ -52,6 +52,13 @@
     &:focus {
       color: $accent-text-color;
     }
+
+    &:hover .page-header__contacts-icon,
+    &:focus .page-header__contacts-icon {
+      fill: $accent-text-color;
+      stroke: $accent-text-color;
+      stroke-width: 2px;
+    }
   }
 
   &__contacts-icon {
@@ -61,13 +68,6 @@
     stroke: $border-color;
     stroke-width: 1px;
     @include mixinTransition(fill);
-
-    .page-header__contacts-link:hover &,
-    .page-header__contacts-link:focus & {
-      fill: $accent-text-color;
-      stroke: $accent-text-color;
-      stroke-width: 2px;
-    }
   }
 }
 

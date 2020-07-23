@@ -1,7 +1,7 @@
 footer {
   @include dynamic-color($dark-theme-text-color, $background-footer-color);
 
-  & a {
+  a {
     display: block;
   }
 }
@@ -47,7 +47,7 @@ footer {
     @include centerFlex(inline-flex);
     margin-top: 20px;
 
-    & li:not(:last-child) {
+    li:not(:last-child) {
       margin-right: 10px;
     }
   }

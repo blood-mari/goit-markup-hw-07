@@ -154,6 +154,13 @@ body {
   color: #2196f3;
 }
 
+.page-header__contacts-link:hover .page-header__contacts-icon,
+.page-header__contacts-link:focus .page-header__contacts-icon {
+  fill: #2196f3;
+  stroke: #2196f3;
+  stroke-width: 2px;
+}
+
 .page-header__contacts-icon {
   margin-right: 10px;
   fill: #afb1b8;
@@ -161,13 +168,6 @@ body {
   stroke-width: 1px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 1ms;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 1ms;
-}
-
-.page-header__contacts-link:hover .page-header__contacts-icon,
-.page-header__contacts-link:focus .page-header__contacts-icon {
-  fill: #2196f3;
-  stroke: #2196f3;
-  stroke-width: 2px;
 }
 
 .nav__link {
@@ -817,9 +817,9 @@ body {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 1ms;
 }
 
-.clients__link:hover,
-.clients__link:hover .clients__link__logo, .clients__link:focus,
-.clients__link:focus .clients__link__logo {
+.clients__link:hover, .clients__link:focus,
+.clients__link:hover .clients__logo,
+.clients__link:focus clients__logo {
   border-color: #2196f3;
   border-width: 2px;
   -webkit-transform: scale(1.3, 1.3);
