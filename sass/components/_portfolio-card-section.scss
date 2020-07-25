@@ -4,7 +4,7 @@
     padding-bottom: 16px;
     @include centerFlex(flex, flex-start);
 
-    & li + li {
+    li + li {
       margin-left: 8px;
     }
   }
@@ -102,7 +102,7 @@
 
   padding: 63px 24px;
 
-  .examples-work__item-thumb:hover & {
+  .examples-work__item-link:hover & {
     transform: translateY(0);
   }
 }
